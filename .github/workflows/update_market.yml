@@ -3,7 +3,7 @@ name: Update Market Data Index
 on:
   schedule:
     # 매일 한국 시간 기준 오전 7:00 (UTC 22:00) 실행
-    - cron: '17 * * * *'
+    - cron: '21 * * * *'
   workflow_dispatch: # 버튼 눌러서 수동 실행 가능
 
 jobs:
@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Check out repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: Set up Python
       uses: actions/setup-python@v5
